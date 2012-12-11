@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A04CB2C516777532005D5CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2C416777532005D5CF0 /* Foundation.framework */; };
-		A04CB2CA16777532005D5CF0 /* AeroGear_Store.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A04CB2C916777532005D5CF0 /* AeroGear_Store.h */; };
-		A04CB2CC16777532005D5CF0 /* AeroGear_Store.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB2CB16777532005D5CF0 /* AeroGear_Store.m */; };
 		A04CB2D416777532005D5CF0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2D316777532005D5CF0 /* SenTestingKit.framework */; };
 		A04CB2D616777532005D5CF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2D516777532005D5CF0 /* UIKit.framework */; };
 		A04CB2D716777532005D5CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2C416777532005D5CF0 /* Foundation.framework */; };
 		A04CB2DA16777532005D5CF0 /* libAeroGear-Store.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2C116777532005D5CF0 /* libAeroGear-Store.a */; };
 		A04CB2E016777532005D5CF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A04CB2DE16777532005D5CF0 /* InfoPlist.strings */; };
 		A04CB2E316777532005D5CF0 /* AeroGear_StoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */; };
+		A04CB2F216777A5C005D5CF0 /* AGIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB2F116777A5C005D5CF0 /* AGIncrementalStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +34,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				A04CB2CA16777532005D5CF0 /* AeroGear_Store.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,15 +43,14 @@
 		A04CB2C116777532005D5CF0 /* libAeroGear-Store.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAeroGear-Store.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04CB2C416777532005D5CF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A04CB2C816777532005D5CF0 /* AeroGear-Store-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AeroGear-Store-Prefix.pch"; sourceTree = "<group>"; };
-		A04CB2C916777532005D5CF0 /* AeroGear_Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroGear_Store.h; sourceTree = "<group>"; };
-		A04CB2CB16777532005D5CF0 /* AeroGear_Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroGear_Store.m; sourceTree = "<group>"; };
 		A04CB2D216777532005D5CF0 /* AeroGear-StoreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AeroGear-StoreTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04CB2D316777532005D5CF0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A04CB2D516777532005D5CF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A04CB2DD16777532005D5CF0 /* AeroGear-StoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AeroGear-StoreTests-Info.plist"; sourceTree = "<group>"; };
 		A04CB2DF16777532005D5CF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A04CB2E116777532005D5CF0 /* AeroGear_StoreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroGear_StoreTests.h; sourceTree = "<group>"; };
 		A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroGear_StoreTests.m; sourceTree = "<group>"; };
+		A04CB2F016777A5C005D5CF0 /* AGIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIncrementalStore.h; sourceTree = "<group>"; };
+		A04CB2F116777A5C005D5CF0 /* AGIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIncrementalStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +108,9 @@
 		A04CB2C616777532005D5CF0 /* AeroGear-Store */ = {
 			isa = PBXGroup;
 			children = (
-				A04CB2C916777532005D5CF0 /* AeroGear_Store.h */,
-				A04CB2CB16777532005D5CF0 /* AeroGear_Store.m */,
 				A04CB2C716777532005D5CF0 /* Supporting Files */,
+				A04CB2F016777A5C005D5CF0 /* AGIncrementalStore.h */,
+				A04CB2F116777A5C005D5CF0 /* AGIncrementalStore.m */,
 			);
 			path = "AeroGear-Store";
 			sourceTree = "<group>";
@@ -129,7 +126,6 @@
 		A04CB2DB16777532005D5CF0 /* AeroGear-StoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				A04CB2E116777532005D5CF0 /* AeroGear_StoreTests.h */,
 				A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */,
 				A04CB2DC16777532005D5CF0 /* Supporting Files */,
 			);
@@ -243,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A04CB2CC16777532005D5CF0 /* AeroGear_Store.m in Sources */,
+				A04CB2F216777A5C005D5CF0 /* AGIncrementalStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +393,7 @@
 				A04CB2E816777532005D5CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A04CB2E916777532005D5CF0 /* Build configuration list for PBXNativeTarget "AeroGear-StoreTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +402,7 @@
 				A04CB2EB16777532005D5CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
