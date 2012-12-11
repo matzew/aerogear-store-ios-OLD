@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3ECC890A35C54189AA77E1D0 /* libPods-AeroGear-StoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849FA5C456904C3098E2221A /* libPods-AeroGear-StoreTests.a */; };
 		A04CB2C516777532005D5CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2C416777532005D5CF0 /* Foundation.framework */; };
 		A04CB2D416777532005D5CF0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2D316777532005D5CF0 /* SenTestingKit.framework */; };
 		A04CB2D616777532005D5CF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2D516777532005D5CF0 /* UIKit.framework */; };
@@ -15,6 +16,10 @@
 		A04CB2E016777532005D5CF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A04CB2DE16777532005D5CF0 /* InfoPlist.strings */; };
 		A04CB2E316777532005D5CF0 /* AeroGear_StoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */; };
 		A04CB2F216777A5C005D5CF0 /* AGIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB2F116777A5C005D5CF0 /* AGIncrementalStore.m */; };
+		A04CB2FA16777C0B005D5CF0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2F916777C0B005D5CF0 /* CoreData.framework */; };
+		A04CB2FD16777C18005D5CF0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2FC16777C18005D5CF0 /* SystemConfiguration.framework */; };
+		A04CB2FF16777C22005D5CF0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2FE16777C22005D5CF0 /* MobileCoreServices.framework */; };
+		B5F5CA11D6404282A4CAD974 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06439B77C3BB4176AAF6B4F7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06439B77C3BB4176AAF6B4F7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2753041E178E4C6C9C6E138F /* Pods-AeroGear-StoreTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeroGear-StoreTests.xcconfig"; path = "Pods/Pods-AeroGear-StoreTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		849FA5C456904C3098E2221A /* libPods-AeroGear-StoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AeroGear-StoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04CB2C116777532005D5CF0 /* libAeroGear-Store.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAeroGear-Store.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04CB2C416777532005D5CF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A04CB2C816777532005D5CF0 /* AeroGear-Store-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AeroGear-Store-Prefix.pch"; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 		A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroGear_StoreTests.m; sourceTree = "<group>"; };
 		A04CB2F016777A5C005D5CF0 /* AGIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIncrementalStore.h; sourceTree = "<group>"; };
 		A04CB2F116777A5C005D5CF0 /* AGIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIncrementalStore.m; sourceTree = "<group>"; };
+		A04CB2F916777C0B005D5CF0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A04CB2FC16777C18005D5CF0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A04CB2FE16777C22005D5CF0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B0CB3339F2AF4CF991D4E07A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04CB2C516777532005D5CF0 /* Foundation.framework in Frameworks */,
+				B5F5CA11D6404282A4CAD974 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,10 +79,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04CB2FF16777C22005D5CF0 /* MobileCoreServices.framework in Frameworks */,
+				A04CB2FD16777C18005D5CF0 /* SystemConfiguration.framework in Frameworks */,
+				A04CB2FA16777C0B005D5CF0 /* CoreData.framework in Frameworks */,
 				A04CB2D416777532005D5CF0 /* SenTestingKit.framework in Frameworks */,
 				A04CB2D616777532005D5CF0 /* UIKit.framework in Frameworks */,
 				A04CB2D716777532005D5CF0 /* Foundation.framework in Frameworks */,
 				A04CB2DA16777532005D5CF0 /* libAeroGear-Store.a in Frameworks */,
+				3ECC890A35C54189AA77E1D0 /* libPods-AeroGear-StoreTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				A04CB2DB16777532005D5CF0 /* AeroGear-StoreTests */,
 				A04CB2C316777532005D5CF0 /* Frameworks */,
 				A04CB2C216777532005D5CF0 /* Products */,
+				B0CB3339F2AF4CF991D4E07A /* Pods.xcconfig */,
+				2753041E178E4C6C9C6E138F /* Pods-AeroGear-StoreTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,9 +117,14 @@
 		A04CB2C316777532005D5CF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A04CB2FE16777C22005D5CF0 /* MobileCoreServices.framework */,
+				A04CB2FC16777C18005D5CF0 /* SystemConfiguration.framework */,
+				A04CB2F916777C0B005D5CF0 /* CoreData.framework */,
 				A04CB2C416777532005D5CF0 /* Foundation.framework */,
 				A04CB2D316777532005D5CF0 /* SenTestingKit.framework */,
 				A04CB2D516777532005D5CF0 /* UIKit.framework */,
+				06439B77C3BB4176AAF6B4F7 /* libPods.a */,
+				849FA5C456904C3098E2221A /* libPods-AeroGear-StoreTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,6 +175,7 @@
 				A04CB2BD16777532005D5CF0 /* Sources */,
 				A04CB2BE16777532005D5CF0 /* Frameworks */,
 				A04CB2BF16777532005D5CF0 /* CopyFiles */,
+				A5477E1435384404BF865B90 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +194,7 @@
 				A04CB2CE16777532005D5CF0 /* Frameworks */,
 				A04CB2CF16777532005D5CF0 /* Resources */,
 				A04CB2D016777532005D5CF0 /* ShellScript */,
+				14EB1A82DBCB47A98AA66C99 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +245,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		14EB1A82DBCB47A98AA66C99 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-AeroGear-StoreTests-resources.sh\"\n";
+		};
 		A04CB2D016777532005D5CF0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +271,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		A5477E1435384404BF865B90 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -322,6 +376,7 @@
 		};
 		A04CB2E716777532005D5CF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CB3339F2AF4CF991D4E07A /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/AeroGear_Store.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -334,6 +389,7 @@
 		};
 		A04CB2E816777532005D5CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CB3339F2AF4CF991D4E07A /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/AeroGear_Store.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -346,6 +402,7 @@
 		};
 		A04CB2EA16777532005D5CF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2753041E178E4C6C9C6E138F /* Pods-AeroGear-StoreTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -361,6 +418,7 @@
 		};
 		A04CB2EB16777532005D5CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2753041E178E4C6C9C6E138F /* Pods-AeroGear-StoreTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
