@@ -16,20 +16,24 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import "AFIncrementalStore.h"
+#import "AGIncrementalStoreHttpClient.h"
 
+@implementation AGIncrementalStoreHttpClient
 
-@protocol AGIncrementalStoreAdapter <NSObject>
++ (AGIncrementalStoreHttpClient *)clientFor:(NSURL *)baseURL {
+    return [[self alloc] initWithBaseURL:baseURL];
+}
 
--(NSURL *) baseURL;
-+(NSString *) modelName;
-+(NSString *) extension;
+- (id)initWithBaseURL:(NSURL *)url {
+    self = [super initWithBaseURL:url];
+    if (!self) {
+        return nil;
+    }
+    
+    [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
+    [self setDefaultHeader:@"Accept" value:@"application/json"];
+    
+    return self;
+}
+
 @end
-
-
-@interface AGIncrementalStore : AFIncrementalStore<AGIncrementalStoreAdapter>
-
-@end
-
-

@@ -16,20 +16,21 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import "AFIncrementalStore.h"
+#import "AGTestStoreAdapter.h"
+
+@implementation AGTestStoreAdapter
+
+-(NSURL *) baseURL {
+    return [NSURL URLWithString:@"http://www.server.com/app"];
+}
+
++(NSString *) modelName {
+    return @"TestModel";
+}
+
++(NSString *) extension {
+    return @"momd";
+}
 
 
-@protocol AGIncrementalStoreAdapter <NSObject>
-
--(NSURL *) baseURL;
-+(NSString *) modelName;
-+(NSString *) extension;
 @end
-
-
-@interface AGIncrementalStore : AFIncrementalStore<AGIncrementalStoreAdapter>
-
-@end
-
-

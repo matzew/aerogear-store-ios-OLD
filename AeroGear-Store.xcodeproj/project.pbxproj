@@ -19,6 +19,9 @@
 		A04CB2FA16777C0B005D5CF0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2F916777C0B005D5CF0 /* CoreData.framework */; };
 		A04CB2FD16777C18005D5CF0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2FC16777C18005D5CF0 /* SystemConfiguration.framework */; };
 		A04CB2FF16777C22005D5CF0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2FE16777C22005D5CF0 /* MobileCoreServices.framework */; };
+		A04CB30716779293005D5CF0 /* AGIncrementalStoreHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB30616779292005D5CF0 /* AGIncrementalStoreHttpClient.m */; };
+		A04CB30D16779C4D005D5CF0 /* AGTestStoreAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB30C16779C4D005D5CF0 /* AGTestStoreAdapter.m */; };
+		A04CB31016779D67005D5CF0 /* AGCustomStoreAdapterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB30F16779D67005D5CF0 /* AGCustomStoreAdapterTests.m */; };
 		B5F5CA11D6404282A4CAD974 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06439B77C3BB4176AAF6B4F7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,12 @@
 		A04CB2F916777C0B005D5CF0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A04CB2FC16777C18005D5CF0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A04CB2FE16777C22005D5CF0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A04CB30016777CCB005D5CF0 /* AeroGearStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroGearStore.h; sourceTree = "<group>"; };
+		A04CB30516779292005D5CF0 /* AGIncrementalStoreHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGIncrementalStoreHttpClient.h; path = ../AGIncrementalStoreHttpClient.h; sourceTree = "<group>"; };
+		A04CB30616779292005D5CF0 /* AGIncrementalStoreHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGIncrementalStoreHttpClient.m; path = ../AGIncrementalStoreHttpClient.m; sourceTree = "<group>"; };
+		A04CB30B16779C4D005D5CF0 /* AGTestStoreAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTestStoreAdapter.h; sourceTree = "<group>"; };
+		A04CB30C16779C4D005D5CF0 /* AGTestStoreAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTestStoreAdapter.m; sourceTree = "<group>"; };
+		A04CB30F16779D67005D5CF0 /* AGCustomStoreAdapterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCustomStoreAdapterTests.m; sourceTree = "<group>"; };
 		B0CB3339F2AF4CF991D4E07A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -135,6 +144,9 @@
 				A04CB2C716777532005D5CF0 /* Supporting Files */,
 				A04CB2F016777A5C005D5CF0 /* AGIncrementalStore.h */,
 				A04CB2F116777A5C005D5CF0 /* AGIncrementalStore.m */,
+				A04CB30516779292005D5CF0 /* AGIncrementalStoreHttpClient.h */,
+				A04CB30616779292005D5CF0 /* AGIncrementalStoreHttpClient.m */,
+				A04CB30016777CCB005D5CF0 /* AeroGearStore.h */,
 			);
 			path = "AeroGear-Store";
 			sourceTree = "<group>";
@@ -150,8 +162,11 @@
 		A04CB2DB16777532005D5CF0 /* AeroGear-StoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */,
 				A04CB2DC16777532005D5CF0 /* Supporting Files */,
+				A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */,
+				A04CB30B16779C4D005D5CF0 /* AGTestStoreAdapter.h */,
+				A04CB30C16779C4D005D5CF0 /* AGTestStoreAdapter.m */,
+				A04CB30F16779D67005D5CF0 /* AGCustomStoreAdapterTests.m */,
 			);
 			path = "AeroGear-StoreTests";
 			sourceTree = "<group>";
@@ -294,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04CB2F216777A5C005D5CF0 /* AGIncrementalStore.m in Sources */,
+				A04CB30716779293005D5CF0 /* AGIncrementalStoreHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04CB2E316777532005D5CF0 /* AeroGear_StoreTests.m in Sources */,
+				A04CB30D16779C4D005D5CF0 /* AGTestStoreAdapter.m in Sources */,
+				A04CB31016779D67005D5CF0 /* AGCustomStoreAdapterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

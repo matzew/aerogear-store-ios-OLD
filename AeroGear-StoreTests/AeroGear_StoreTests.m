@@ -18,10 +18,16 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+#import "AGIncrementalStore.h"
+#import "AGIncrementalStoreHttpClient.h"
+
 @interface AeroGear_StoreTests : SenTestCase
 
 @end
-@implementation AeroGear_StoreTests
+@implementation AeroGear_StoreTests{
+    BOOL _finishedFlag;
+}
+
 
 - (void)setUp
 {
@@ -37,9 +43,65 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    //STFail(@"Unit tests are not implemented yet in AeroGear-StoreTests");
+
+-(void) testModelExtension {
+    @try {
+        [AGIncrementalStore extension];
+        STFail(@"should not get here...");
+    }
+    @catch (NSException *e) {
+        // expected...
+    }
+    @finally {
+        // nope..
+    }
+}
+
+-(void) testModelName {
+    @try {
+        [AGIncrementalStore modelName];
+        STFail(@"should not get here...");
+    }
+    @catch (NSException *e) {
+        // expected...
+    }
+    @finally {
+        // nope..
+    }
+}
+
+-(void) testBaseURL {
+    @try {
+        AGIncrementalStore *store = [[AGIncrementalStore alloc] init];
+        [store baseURL];
+        STFail(@"should not get here...");
+    }
+    @catch (NSException *e) {
+        // expected...
+    }
+    @finally {
+        // nope..
+    }
+}
+
+-(void) testIncHttpClient {
+    
+    NSURL* testURL = [NSURL URLWithString:@"http://todo-aerogear.rhcloud.com/todo-server/"];
+    AGIncrementalStoreHttpClient* httpClient = [AGIncrementalStoreHttpClient clientFor:testURL];
+    
+    [httpClient getPath:@"tasks" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"DA -> %@", responseObject);
+        
+        _finishedFlag = YES;
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"error -> %@", error);
+    }];
+    
+    
+    // keep the run loop going
+    while(!_finishedFlag) {
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    }
 }
 
 @end

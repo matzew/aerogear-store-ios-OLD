@@ -16,20 +16,9 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import "AFIncrementalStore.h"
+#ifndef _AEROGEAR-STORE_
+#define _AEROGEAR-STORE_
 
+#import "AGIncrementalStore.h"
 
-@protocol AGIncrementalStoreAdapter <NSObject>
-
--(NSURL *) baseURL;
-+(NSString *) modelName;
-+(NSString *) extension;
-@end
-
-
-@interface AGIncrementalStore : AFIncrementalStore<AGIncrementalStoreAdapter>
-
-@end
-
-
+#endif /* _AEROGEAR-STORE */

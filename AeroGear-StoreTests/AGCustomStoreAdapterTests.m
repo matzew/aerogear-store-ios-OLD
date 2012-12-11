@@ -16,20 +16,42 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import "AFIncrementalStore.h"
+#import <SenTestingKit/SenTestingKit.h>
 
+#import "AGTestStoreAdapter.h"
 
-@protocol AGIncrementalStoreAdapter <NSObject>
-
--(NSURL *) baseURL;
-+(NSString *) modelName;
-+(NSString *) extension;
-@end
-
-
-@interface AGIncrementalStore : AFIncrementalStore<AGIncrementalStoreAdapter>
+@interface AGCustomStoreAdapterTests : SenTestCase
 
 @end
 
+@implementation AGCustomStoreAdapterTests
 
+- (void)setUp
+{
+    [super setUp];
+    
+    // Set-up code here.
+}
+
+- (void)tearDown
+{
+    // Tear-down code here.
+    
+    [super tearDown];
+}
+
+
+-(void) testModelExtension {
+    [AGTestStoreAdapter extension];
+}
+
+-(void) testModelName {
+    [AGTestStoreAdapter modelName];
+}
+
+-(void) testBaseURL {
+    AGTestStoreAdapter *store = [[AGTestStoreAdapter alloc] init];
+    [store baseURL];
+}
+
+@end

@@ -16,20 +16,9 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
-#import "AFIncrementalStore.h"
+#import <UIKit/UIKit.h>
+#import "AGIncrementalStore.h"
 
-
-@protocol AGIncrementalStoreAdapter <NSObject>
-
--(NSURL *) baseURL;
-+(NSString *) modelName;
-+(NSString *) extension;
-@end
-
-
-@interface AGIncrementalStore : AFIncrementalStore<AGIncrementalStoreAdapter>
+@interface AGTestStoreAdapter : AGIncrementalStore<AGIncrementalStoreAdapter>
 
 @end
-
-

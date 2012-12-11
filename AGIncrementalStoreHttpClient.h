@@ -17,19 +17,11 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "AFRESTClient.h"
 #import "AFIncrementalStore.h"
 
+@interface AGIncrementalStoreHttpClient : AFRESTClient <AFIncrementalStoreHTTPClient>
 
-@protocol AGIncrementalStoreAdapter <NSObject>
-
--(NSURL *) baseURL;
-+(NSString *) modelName;
-+(NSString *) extension;
-@end
-
-
-@interface AGIncrementalStore : AFIncrementalStore<AGIncrementalStoreAdapter>
++ (AGIncrementalStoreHttpClient *)clientFor:(NSURL *)baseURL;
 
 @end
-
-
