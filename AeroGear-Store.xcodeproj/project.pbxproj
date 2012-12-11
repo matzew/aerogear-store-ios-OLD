@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A04CB2C516777532005D5CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2C416777532005D5CF0 /* Foundation.framework */; };
+		A04CB2CA16777532005D5CF0 /* AeroGear_Store.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A04CB2C916777532005D5CF0 /* AeroGear_Store.h */; };
+		A04CB2CC16777532005D5CF0 /* AeroGear_Store.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB2CB16777532005D5CF0 /* AeroGear_Store.m */; };
+		A04CB2D416777532005D5CF0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2D316777532005D5CF0 /* SenTestingKit.framework */; };
+		A04CB2D616777532005D5CF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2D516777532005D5CF0 /* UIKit.framework */; };
+		A04CB2D716777532005D5CF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2C416777532005D5CF0 /* Foundation.framework */; };
+		A04CB2DA16777532005D5CF0 /* libAeroGear-Store.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CB2C116777532005D5CF0 /* libAeroGear-Store.a */; };
+		A04CB2E016777532005D5CF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A04CB2DE16777532005D5CF0 /* InfoPlist.strings */; };
+		A04CB2E316777532005D5CF0 /* AeroGear_StoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A04CB2D816777532005D5CF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A04CB2B816777532005D5CF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A04CB2C016777532005D5CF0;
+			remoteInfo = "AeroGear-Store";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A04CB2BF16777532005D5CF0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				A04CB2CA16777532005D5CF0 /* AeroGear_Store.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A04CB2C116777532005D5CF0 /* libAeroGear-Store.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAeroGear-Store.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04CB2C416777532005D5CF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A04CB2C816777532005D5CF0 /* AeroGear-Store-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AeroGear-Store-Prefix.pch"; sourceTree = "<group>"; };
+		A04CB2C916777532005D5CF0 /* AeroGear_Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroGear_Store.h; sourceTree = "<group>"; };
+		A04CB2CB16777532005D5CF0 /* AeroGear_Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroGear_Store.m; sourceTree = "<group>"; };
+		A04CB2D216777532005D5CF0 /* AeroGear-StoreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AeroGear-StoreTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04CB2D316777532005D5CF0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A04CB2D516777532005D5CF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A04CB2DD16777532005D5CF0 /* AeroGear-StoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AeroGear-StoreTests-Info.plist"; sourceTree = "<group>"; };
+		A04CB2DF16777532005D5CF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A04CB2E116777532005D5CF0 /* AeroGear_StoreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroGear_StoreTests.h; sourceTree = "<group>"; };
+		A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroGear_StoreTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A04CB2BE16777532005D5CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04CB2C516777532005D5CF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04CB2CE16777532005D5CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04CB2D416777532005D5CF0 /* SenTestingKit.framework in Frameworks */,
+				A04CB2D616777532005D5CF0 /* UIKit.framework in Frameworks */,
+				A04CB2D716777532005D5CF0 /* Foundation.framework in Frameworks */,
+				A04CB2DA16777532005D5CF0 /* libAeroGear-Store.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A04CB2B616777532005D5CF0 = {
+			isa = PBXGroup;
+			children = (
+				A04CB2C616777532005D5CF0 /* AeroGear-Store */,
+				A04CB2DB16777532005D5CF0 /* AeroGear-StoreTests */,
+				A04CB2C316777532005D5CF0 /* Frameworks */,
+				A04CB2C216777532005D5CF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A04CB2C216777532005D5CF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A04CB2C116777532005D5CF0 /* libAeroGear-Store.a */,
+				A04CB2D216777532005D5CF0 /* AeroGear-StoreTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A04CB2C316777532005D5CF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A04CB2C416777532005D5CF0 /* Foundation.framework */,
+				A04CB2D316777532005D5CF0 /* SenTestingKit.framework */,
+				A04CB2D516777532005D5CF0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A04CB2C616777532005D5CF0 /* AeroGear-Store */ = {
+			isa = PBXGroup;
+			children = (
+				A04CB2C916777532005D5CF0 /* AeroGear_Store.h */,
+				A04CB2CB16777532005D5CF0 /* AeroGear_Store.m */,
+				A04CB2C716777532005D5CF0 /* Supporting Files */,
+			);
+			path = "AeroGear-Store";
+			sourceTree = "<group>";
+		};
+		A04CB2C716777532005D5CF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A04CB2C816777532005D5CF0 /* AeroGear-Store-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A04CB2DB16777532005D5CF0 /* AeroGear-StoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				A04CB2E116777532005D5CF0 /* AeroGear_StoreTests.h */,
+				A04CB2E216777532005D5CF0 /* AeroGear_StoreTests.m */,
+				A04CB2DC16777532005D5CF0 /* Supporting Files */,
+			);
+			path = "AeroGear-StoreTests";
+			sourceTree = "<group>";
+		};
+		A04CB2DC16777532005D5CF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A04CB2DD16777532005D5CF0 /* AeroGear-StoreTests-Info.plist */,
+				A04CB2DE16777532005D5CF0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A04CB2C016777532005D5CF0 /* AeroGear-Store */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04CB2E616777532005D5CF0 /* Build configuration list for PBXNativeTarget "AeroGear-Store" */;
+			buildPhases = (
+				A04CB2BD16777532005D5CF0 /* Sources */,
+				A04CB2BE16777532005D5CF0 /* Frameworks */,
+				A04CB2BF16777532005D5CF0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AeroGear-Store";
+			productName = "AeroGear-Store";
+			productReference = A04CB2C116777532005D5CF0 /* libAeroGear-Store.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A04CB2D116777532005D5CF0 /* AeroGear-StoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04CB2E916777532005D5CF0 /* Build configuration list for PBXNativeTarget "AeroGear-StoreTests" */;
+			buildPhases = (
+				A04CB2CD16777532005D5CF0 /* Sources */,
+				A04CB2CE16777532005D5CF0 /* Frameworks */,
+				A04CB2CF16777532005D5CF0 /* Resources */,
+				A04CB2D016777532005D5CF0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A04CB2D916777532005D5CF0 /* PBXTargetDependency */,
+			);
+			name = "AeroGear-StoreTests";
+			productName = "AeroGear-StoreTests";
+			productReference = A04CB2D216777532005D5CF0 /* AeroGear-StoreTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A04CB2B816777532005D5CF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Matthias Wessendorf";
+			};
+			buildConfigurationList = A04CB2BB16777532005D5CF0 /* Build configuration list for PBXProject "AeroGear-Store" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A04CB2B616777532005D5CF0;
+			productRefGroup = A04CB2C216777532005D5CF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A04CB2C016777532005D5CF0 /* AeroGear-Store */,
+				A04CB2D116777532005D5CF0 /* AeroGear-StoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A04CB2CF16777532005D5CF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04CB2E016777532005D5CF0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A04CB2D016777532005D5CF0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A04CB2BD16777532005D5CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04CB2CC16777532005D5CF0 /* AeroGear_Store.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04CB2CD16777532005D5CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04CB2E316777532005D5CF0 /* AeroGear_StoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A04CB2D916777532005D5CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A04CB2C016777532005D5CF0 /* AeroGear-Store */;
+			targetProxy = A04CB2D816777532005D5CF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A04CB2DE16777532005D5CF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A04CB2DF16777532005D5CF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A04CB2E416777532005D5CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A04CB2E516777532005D5CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A04CB2E716777532005D5CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AeroGear_Store.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AeroGear-Store/AeroGear-Store-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A04CB2E816777532005D5CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AeroGear_Store.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AeroGear-Store/AeroGear-Store-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A04CB2EA16777532005D5CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AeroGear-Store/AeroGear-Store-Prefix.pch";
+				INFOPLIST_FILE = "AeroGear-StoreTests/AeroGear-StoreTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A04CB2EB16777532005D5CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AeroGear-Store/AeroGear-Store-Prefix.pch";
+				INFOPLIST_FILE = "AeroGear-StoreTests/AeroGear-StoreTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A04CB2BB16777532005D5CF0 /* Build configuration list for PBXProject "AeroGear-Store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04CB2E416777532005D5CF0 /* Debug */,
+				A04CB2E516777532005D5CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04CB2E616777532005D5CF0 /* Build configuration list for PBXNativeTarget "AeroGear-Store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04CB2E716777532005D5CF0 /* Debug */,
+				A04CB2E816777532005D5CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A04CB2E916777532005D5CF0 /* Build configuration list for PBXNativeTarget "AeroGear-StoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04CB2EA16777532005D5CF0 /* Debug */,
+				A04CB2EB16777532005D5CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A04CB2B816777532005D5CF0 /* Project object */;
+}

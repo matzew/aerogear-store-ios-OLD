@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AeroGear-Store' target in the 'AeroGear-Store' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
