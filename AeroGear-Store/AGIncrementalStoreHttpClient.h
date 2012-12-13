@@ -20,8 +20,12 @@
 #import "AFRESTClient.h"
 #import "AFIncrementalStore.h"
 
+#import "AGAuthenticationModule.h"
+
 @interface AGIncrementalStoreHttpClient : AFRESTClient <AFIncrementalStoreHTTPClient>
 
 + (AGIncrementalStoreHttpClient *)clientFor:(NSURL *)baseURL;
+
++ (void) setAuth:(id<AGAuthenticationModule>) authMod;
 
 @end
