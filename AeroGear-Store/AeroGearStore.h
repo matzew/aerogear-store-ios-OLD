@@ -19,6 +19,7 @@
 #ifndef _AEROGEAR-STORE_
 #define _AEROGEAR-STORE_
 
+// includes the protocol...
 #import "AGIncrementalStore.h"
 
 #endif /* _AEROGEAR-STORE */
