@@ -18,14 +18,14 @@
 
 #import "AGRestAuthentication.h"
 #import "AGAuthConfiguration.h"
-#import "AGHttpClient.h"
+#import "AGIncrementalStoreHttpClient.h"
 
 
 // TODO: Use #pragma marks to categorize methods and protocol implementations.
 
 @implementation AGRestAuthentication {
     // ivars
-    AGHttpClient* _restClient;
+    AGIncrementalStoreHttpClient* _restClient;
     NSString* _tokenHeaderName;
     
 }
@@ -79,7 +79,7 @@
         _baseURL = [config baseURL].absoluteString;
         _tokenHeaderName = [config tokenHeaderName];
         
-        _restClient = [AGHttpClient clientFor:[config baseURL]];
+        _restClient = [AGIncrementalStoreHttpClient clientFor:[config baseURL]];
         _restClient.parameterEncoding = AFJSONParameterEncoding;
     }
 
