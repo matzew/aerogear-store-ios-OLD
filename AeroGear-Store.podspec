@@ -20,10 +20,10 @@ Pod::Spec.new do |s|
   s.name         = "AeroGear-Store"
   s.version      = "0.0.1"
   s.summary      = "CoreData Plugin for AeroGear."
-  s.homepage     = "https://github.com/aerogear/aerogear-store-ios"
+  s.homepage     = "https://github.com/matzew/aerogear-store-ios"
   s.license      = 'Apache License, Version 2.0'
   s.author       = "Red Hat, Inc."
-  s.source       = { :git => 'https://github.com/aerogear/aerogear-store-ios.git', :commit => '0ef82f0f9cd3f313afcc4f22448c8b2fc841cf44' }
+  s.source       = { :git => 'https://github.com/matzew/aerogear-store-ios.git', :commit => '23469321b09626a19e9cd2d4d5abdce68d60875d' }
   s.platform     = :ios, '5.0'
   s.source_files = 'AeroGear-Store/**/*.{h,m}'
   s.public_header_files = 'AeroGear-Store/AeroGearStore.h','AeroGear-Store/AGIncrementalStore.h','AeroGear-Store/AGIncrementalStoreHttpClient.h'
