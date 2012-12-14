@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/matzew/aerogear-store-ios"
   s.license      = 'Apache License, Version 2.0'
   s.author       = "Red Hat, Inc."
-  s.source       = { :git => 'https://github.com/matzew/aerogear-store-ios.git', :commit => '08d48adc2c01506fd5114d9a28260c2abe003339' }
+  s.source       = { :git => 'https://github.com/matzew/aerogear-store-ios.git', :commit => 'c1f2fbae8fba6d0a2818af5a9fd0521ddcdb6259' }
   s.platform     = :ios, '5.0'
   s.source_files = 'AeroGear-Store/**/*.{h,m}'
   s.public_header_files = 'AeroGear-Store/AeroGearStore.h','AeroGear-Store/AGIncrementalStore.h','AeroGear-Store/AGIncrementalStoreHttpClient.h', 'AeroGear-Store/sec/AGAuthenticationModule.h', 'AeroGear-Store/sec/AGAuthenticator.h', 'AeroGear-Store/sec/AGAuthConfig.h', 'AeroGear-Store/AGCoreDataPlugin.h'
