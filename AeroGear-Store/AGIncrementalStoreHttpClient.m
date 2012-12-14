@@ -24,6 +24,10 @@
     id<AGAuthenticationModuleAdapter> _authModule;
 }
 
++ (AGIncrementalStoreHttpClient *)clientFor:(NSURL *)baseURL {
+    return [AGIncrementalStoreHttpClient clientFor:baseURL authModule:nil];
+}
+
 + (AGIncrementalStoreHttpClient *)clientFor:(NSURL *)baseURL authModule:(id<AGAuthenticationModule>) authModule {
     return [[self alloc] initWithBaseURL:baseURL authModule:authModule];
 }
