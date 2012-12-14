@@ -22,4 +22,8 @@
 // includes the protocol...
 #import "AGIncrementalStore.h"
 
+#import "AGIncrementalStoreHttpClient.h"
+
+#import "AGCoreDataPlugin.h"
+
 #endif /* _AEROGEAR-STORE */

@@ -32,28 +32,14 @@
 }
 
 + (NSManagedObjectModel *)model {
-    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:[self modelName] withExtension:[self extension]]];
+    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:[self modelName] withExtension:@"xcdatamodeld"]];
 }
 
-// it's a getter of AFIncStore...
-- (id <AFIncrementalStoreHTTPClient>)HTTPClient {
-    
-    // THIS needs to be initialized ...............
-    return [AGIncrementalStoreHttpClient clientFor:[self baseURL]];
-}
 
 #pragma mark - AGIncrementalStoreAdapter
 
--(NSURL *) baseURL {
-    @throw([NSException exceptionWithName:AFIncrementalStoreUnimplementedMethodException reason:NSLocalizedString(@"Unimplemented method: -baseURL. Must be overridden in a subclass", nil) userInfo:nil]);
-}
-
 +(NSString *) modelName {
     @throw([NSException exceptionWithName:AFIncrementalStoreUnimplementedMethodException reason:NSLocalizedString(@"Unimplemented method: +modelName. Must be overridden in a subclass", nil) userInfo:nil]);
-}
-
-+(NSString *) extension {
-    @throw([NSException exceptionWithName:AFIncrementalStoreUnimplementedMethodException reason:NSLocalizedString(@"Unimplemented method: +extension. Must be overridden in a subclass", nil) userInfo:nil]);
 }
 
 @end

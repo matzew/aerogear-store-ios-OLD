@@ -20,17 +20,21 @@
 
 #import "AGAuthenticationModuleAdapter.h"
 
-@implementation AGIncrementalStoreHttpClient
-
-+ (AGIncrementalStoreHttpClient *)clientFor:(NSURL *)baseURL {
-    return [[self alloc] initWithBaseURL:baseURL];
+@implementation AGIncrementalStoreHttpClient {
+    id<AGAuthenticationModuleAdapter> _authModule;
 }
 
-- (id)initWithBaseURL:(NSURL *)url {
++ (AGIncrementalStoreHttpClient *)clientFor:(NSURL *)baseURL authModule:(id<AGAuthenticationModule>) authModule {
+    return [[self alloc] initWithBaseURL:baseURL authModule:authModule];
+}
+
+- (id)initWithBaseURL:(NSURL *)url authModule:(id<AGAuthenticationModule>) authModule{
     self = [super initWithBaseURL:url];
     if (!self) {
         return nil;
     }
+    
+    _authModule = (id<AGAuthenticationModuleAdapter>) authModule;
     
     [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
     [self setDefaultHeader:@"Accept" value:@"application/json"];
@@ -38,11 +42,11 @@
     return self;
 }
 
-//static
-id<AGAuthenticationModuleAdapter> _authModule;
-+ (void) setAuth:(id<AGAuthenticationModule>) authMod {
-    _authModule = (id<AGAuthenticationModuleAdapter>) authMod;
-}
+////static
+//
+//+ (void) setAuth:(id<AGAuthenticationModule>) authMod {
+//    _authModule = (id<AGAuthenticationModuleAdapter>) authMod;
+//}
 
 // override to not handle the cookies
 - (NSMutableURLRequest *)requestWithMethod:(NSString *)method

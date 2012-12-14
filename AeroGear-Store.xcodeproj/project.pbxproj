@@ -25,6 +25,7 @@
 		A0AD30EF1679DBA900104932 /* AGAuthConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AD30E81679DBA900104932 /* AGAuthConfiguration.m */; };
 		A0AD30F01679DBA900104932 /* AGAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AD30EC1679DBA900104932 /* AGAuthenticator.m */; };
 		A0AD30F11679DBA900104932 /* AGRestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AD30EE1679DBA900104932 /* AGRestAuthentication.m */; };
+		A0B2E216167B584500C57DAC /* AGCoreDataPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B2E215167B584500C57DAC /* AGCoreDataPlugin.m */; };
 		B5F5CA11D6404282A4CAD974 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06439B77C3BB4176AAF6B4F7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		A0AD30EC1679DBA900104932 /* AGAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGAuthenticator.m; path = sec/AGAuthenticator.m; sourceTree = "<group>"; };
 		A0AD30ED1679DBA900104932 /* AGRestAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGRestAuthentication.h; path = sec/AGRestAuthentication.h; sourceTree = "<group>"; };
 		A0AD30EE1679DBA900104932 /* AGRestAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGRestAuthentication.m; path = sec/AGRestAuthentication.m; sourceTree = "<group>"; };
+		A0B2E214167B584500C57DAC /* AGCoreDataPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGCoreDataPlugin.h; sourceTree = "<group>"; };
+		A0B2E215167B584500C57DAC /* AGCoreDataPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGCoreDataPlugin.m; sourceTree = "<group>"; };
 		B0CB3339F2AF4CF991D4E07A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -160,6 +163,8 @@
 				A04CB30516779292005D5CF0 /* AGIncrementalStoreHttpClient.h */,
 				A04CB30616779292005D5CF0 /* AGIncrementalStoreHttpClient.m */,
 				A04CB30016777CCB005D5CF0 /* AeroGearStore.h */,
+				A0B2E214167B584500C57DAC /* AGCoreDataPlugin.h */,
+				A0B2E215167B584500C57DAC /* AGCoreDataPlugin.m */,
 			);
 			path = "AeroGear-Store";
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				A0AD30EF1679DBA900104932 /* AGAuthConfiguration.m in Sources */,
 				A0AD30F01679DBA900104932 /* AGAuthenticator.m in Sources */,
 				A0AD30F11679DBA900104932 /* AGRestAuthentication.m in Sources */,
+				A0B2E216167B584500C57DAC /* AGCoreDataPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

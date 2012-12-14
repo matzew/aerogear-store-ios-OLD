@@ -22,13 +22,16 @@
 
 @protocol AGIncrementalStoreAdapter <NSObject>
 
--(NSURL *) baseURL;
+//-(NSURL *) baseURL;
 +(NSString *) modelName;
-+(NSString *) extension;
+//+(NSString *) extension;
 @end
 
 
 @interface AGIncrementalStore : AFIncrementalStore<AGIncrementalStoreAdapter>
+//-(NSURL *) baseURL;
++(NSString *) modelName;
+//+(NSString *) extension;
 
 @end
 
