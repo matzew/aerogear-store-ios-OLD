@@ -21,25 +21,25 @@
 
 @implementation AGIncrementalStore
 
-#pragma mark - AFIncrementalStore.h
-
-+ (void)initialize {
-    [NSPersistentStoreCoordinator registerStoreClass:self forStoreType:[self type]];
-}
-
-+ (NSString *)type {
-    return NSStringFromClass(self);
-}
-
-+ (NSManagedObjectModel *)model {
-    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:[self modelName] withExtension:@"xcdatamodeld"]];
-}
-
-
-#pragma mark - AGIncrementalStoreAdapter
-
-+(NSString *) modelName {
-    @throw([NSException exceptionWithName:AFIncrementalStoreUnimplementedMethodException reason:NSLocalizedString(@"Unimplemented method: +modelName. Must be overridden in a subclass", nil) userInfo:nil]);
-}
+//#pragma mark - AFIncrementalStore.h
+//
+//+ (void)initialize {
+//    [NSPersistentStoreCoordinator registerStoreClass:self forStoreType:[self type]];
+//}
+//
+//+ (NSString *)type {
+//    return NSStringFromClass(self);
+//}
+//
+//+ (NSManagedObjectModel *)model {
+//    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:[self modelName] withExtension:@"xcdatamodeld"]];
+//}
+//
+//
+//#pragma mark - AGIncrementalStoreAdapter
+//
+//+(NSString *) modelName {
+//    @throw([NSException exceptionWithName:AFIncrementalStoreUnimplementedMethodException reason:NSLocalizedString(@"Unimplemented method: +modelName. Must be overridden in a subclass", nil) userInfo:nil]);
+//}
 
 @end

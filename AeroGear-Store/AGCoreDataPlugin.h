@@ -9,12 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-#import "AGIncrementalStore.h"
-
+#import "AFIncrementalStore.h"
 #import "AGAuthenticationModule.h"
 
+@protocol AGIncrementalStoreAdapter <NSObject>
 
-@interface AGCoreDataPlugin : AGIncrementalStore<AGIncrementalStoreAdapter>
+//-(NSURL *) baseURL;
++(NSString *) modelName;
+//+(NSString *) extension;
+@end
+
+@interface AGCoreDataPlugin : AFIncrementalStore<AGIncrementalStoreAdapter>
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

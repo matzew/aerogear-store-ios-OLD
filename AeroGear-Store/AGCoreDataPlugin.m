@@ -43,6 +43,20 @@
 }
 
 
+
++ (void)initialize {
+    [NSPersistentStoreCoordinator registerStoreClass:self forStoreType:[self type]];
+}
+
++ (NSString *)type {
+    return NSStringFromClass(self);
+}
+
++ (NSManagedObjectModel *)model {
+    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:[self modelName] withExtension:@"xcdatamodeld"]];
+}
+
+
 #pragma mark - Core Data
 
 //static:
@@ -54,6 +68,9 @@ id<AGAuthenticationModule> _authenticationModule;
     // THIS needs to be initialized ...............
     return [AGIncrementalStoreHttpClient clientFor:[self baseURL] authModule:_authenticationModule];
 }
+
+
+
 
 
 #pragma mark - Core Data
@@ -98,7 +115,7 @@ id<AGAuthenticationModule> _authenticationModule;
     
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     
-    [__persistentStoreCoordinator addPersistentStoreWithType:[AGIncrementalStore type] configuration:nil URL:nil options:nil error:nil];
+    [__persistentStoreCoordinator addPersistentStoreWithType:[self type] configuration:nil URL:nil options:nil error:nil];
 //    AFIncrementalStore *incrementalStore = (AFIncrementalStore *)[__persistentStoreCoordinator addPersistentStoreWithType:[SongsIncrementalStore type] configuration:nil URL:nil options:nil error:nil];
 //    NSError *error = nil;
 //    if (![incrementalStore.backingPersistentStoreCoordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:&error]) {

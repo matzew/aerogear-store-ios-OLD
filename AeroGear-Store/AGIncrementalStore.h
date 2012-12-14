@@ -20,17 +20,17 @@
 #import "AFIncrementalStore.h"
 
 
-@protocol AGIncrementalStoreAdapter <NSObject>
+//@protocol AGIncrementalStoreAdapter <NSObject>
+//
+////-(NSURL *) baseURL;
+//+(NSString *) modelName;
+////+(NSString *) extension;
+//@end
 
+
+@interface AGIncrementalStore : NSObject //AFIncrementalStore<AGIncrementalStoreAdapter>
 //-(NSURL *) baseURL;
-+(NSString *) modelName;
-//+(NSString *) extension;
-@end
-
-
-@interface AGIncrementalStore : AFIncrementalStore<AGIncrementalStoreAdapter>
-//-(NSURL *) baseURL;
-+(NSString *) modelName;
+//+(NSString *) modelName;
 //+(NSString *) extension;
 
 @end
