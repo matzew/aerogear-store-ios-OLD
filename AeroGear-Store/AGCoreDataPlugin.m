@@ -19,18 +19,18 @@
 
 @synthesize managedObjectContext = _managedObjectContext;
 
-// hack??
-@synthesize baseURL   = _baseURL;
-@synthesize modelName = _modelName;
+//// hack??
+//@synthesize baseURL   = _baseURL;
+//@synthesize modelName = _modelName;
 
-NSString* _modelName;
--(void) setModelName:(NSString *) name {
-    _modelName = name;
-}
-
--(NSString *) modelName {
-    return _modelName;
-}
+//NSString* _modelName;
+//-(void) setModelName:(NSString *) name {
+//    _modelName = name;
+//}
+//
+//-(NSString *) modelName {
+//    return _modelName;
+//}
 
 
 ///// init with........ model, url, extension(?).....
@@ -38,7 +38,13 @@ NSString* _modelName;
 
 //Idally user does sharedClient:auth base....... ONCE.... and can just get the damn context of ...
 
-+ (AGCoreDataPlugin *)sharedClient:(id<AGAuthenticationModule>) authenticationModule {
++ (AGCoreDataPlugin *)sharedClient:(id<AGAuthenticationModule>) authenticationModule model:(NSString *) model baseURL:(NSURL *) baseURL {
+    
+    // model and url:
+    _modelName = model;
+    _baseURL = baseURL;
+
+
 
     static AGCoreDataPlugin *_sharedClient = nil;
     static dispatch_once_t onceToken;
@@ -65,16 +71,19 @@ NSString* _modelName;
 }
 
 
-#pragma mark - Core Data
-
 //static:
 id<AGAuthenticationModule> _authenticationModule;
+NSString *_modelName;
+NSURL *_baseURL;
+
+#pragma mark - Core Data
+
 
 // it's a getter of AFIncStore...
 - (id <AFIncrementalStoreHTTPClient>)HTTPClient {
     
     // THIS needs to be initialized ...............
-    return [AGIncrementalStoreHttpClient clientFor:[self baseURL] authModule:_authenticationModule];
+    return [AGIncrementalStoreHttpClient clientFor:_baseURL authModule:_authenticationModule];
 }
 
 

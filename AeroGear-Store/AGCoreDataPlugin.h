@@ -23,11 +23,11 @@
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
-@property (nonatomic) NSString *modelName;
-@property (nonatomic) NSURL *baseURL;
+//@property (nonatomic) NSString *modelName;
+//@property (nonatomic) NSURL *baseURL;
+//
 
 
-
-+ (AGCoreDataPlugin *)sharedClient:(id<AGAuthenticationModule>) authenticationModule;
++ (AGCoreDataPlugin *)sharedClient:(id<AGAuthenticationModule>) authenticationModule model:(NSString *) model baseURL:(NSURL *) baseURL;
 
 @end
