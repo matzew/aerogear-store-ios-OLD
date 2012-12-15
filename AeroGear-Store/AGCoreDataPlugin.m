@@ -12,17 +12,25 @@
 #import "AGIncrementalStoreHttpClient.h"
 
 @implementation AGCoreDataPlugin {
-    
+    NSManagedObjectModel *_managedObjectModel;
+    NSPersistentStoreCoordinator *_persistentStoreCoordinator;
 }
 
 
-@synthesize managedObjectContext = __managedObjectContext;
-@synthesize managedObjectModel = __managedObjectModel;
-@synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize managedObjectContext = _managedObjectContext;
 
 // hack??
 @synthesize baseURL   = _baseURL;
 @synthesize modelName = _modelName;
+
+NSString* _modelName;
+-(void) setModelName:(NSString *) name {
+    _modelName = name;
+}
+
+-(NSString *) modelName {
+    return _modelName;
+}
 
 
 ///// init with........ model, url, extension(?).....
@@ -53,7 +61,7 @@
 }
 
 + (NSManagedObjectModel *)model {
-    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:[self modelName] withExtension:@"xcdatamodeld"]];
+    return [[NSManagedObjectModel alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:_modelName withExtension:@"xcdatamodeld"]];
 }
 
 
@@ -78,44 +86,44 @@ id<AGAuthenticationModule> _authenticationModule;
 // Returns the managed object context for the application.
 // If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
 - (NSManagedObjectContext *)managedObjectContext {
-    if (__managedObjectContext != nil) {
-        return __managedObjectContext;
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
     }
     
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    NSPersistentStoreCoordinator *coordinator = [self storeCoordinator];
     if (coordinator != nil) {
-        __managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-        [__managedObjectContext setPersistentStoreCoordinator:coordinator];
+        _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+        [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     }
     
-    return __managedObjectContext;
+    return _managedObjectContext;
 }
 
 // Returns the managed object model for the application.
 // If the model doesn't already exist, it is created from the application's model.
-- (NSManagedObjectModel *)managedObjectModel
+- (NSManagedObjectModel *)objectModel
 {
-    if (__managedObjectModel != nil) {
-        return __managedObjectModel;
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
     }
     
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:_modelName withExtension:@"momd"];
     //NSURL *modelURL = [[NSBundle mainBundle] URLForResource:[self mo] withExtension:[self ]];
-    __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     
-    return __managedObjectModel;
+    return _managedObjectModel;
 }
 
 // Returns the persistent store coordinator for the application.
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-    if (__persistentStoreCoordinator != nil) {
-        return __persistentStoreCoordinator;
+- (NSPersistentStoreCoordinator *)storeCoordinator {
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
     }
     
-    __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self objectModel]];
     
-    [__persistentStoreCoordinator addPersistentStoreWithType:[self type] configuration:nil URL:nil options:nil error:nil];
+    [_persistentStoreCoordinator addPersistentStoreWithType:[self type] configuration:nil URL:nil options:nil error:nil];
 //    AFIncrementalStore *incrementalStore = (AFIncrementalStore *)[__persistentStoreCoordinator addPersistentStoreWithType:[SongsIncrementalStore type] configuration:nil URL:nil options:nil error:nil];
 //    NSError *error = nil;
 //    if (![incrementalStore.backingPersistentStoreCoordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:&error]) {
@@ -125,7 +133,7 @@ id<AGAuthenticationModule> _authenticationModule;
 //
 //    NSLog(@"SQLite URL: %@", [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Songs.sqlite"]);
 //    
-    return __persistentStoreCoordinator;
+    return _persistentStoreCoordinator;
 }
 
 @end

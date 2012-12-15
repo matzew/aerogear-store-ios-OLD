@@ -43,47 +43,6 @@
     [super tearDown];
 }
 
-
--(void) testModelExtension {
-    @try {
-        [AGIncrementalStore extension];
-        STFail(@"should not get here...");
-    }
-    @catch (NSException *e) {
-        // expected...
-    }
-    @finally {
-        // nope..
-    }
-}
-
--(void) testModelName {
-    @try {
-        [AGIncrementalStore modelName];
-        STFail(@"should not get here...");
-    }
-    @catch (NSException *e) {
-        // expected...
-    }
-    @finally {
-        // nope..
-    }
-}
-
--(void) testBaseURL {
-    @try {
-        AGIncrementalStore *store = [[AGIncrementalStore alloc] init];
-        [store baseURL];
-        STFail(@"should not get here...");
-    }
-    @catch (NSException *e) {
-        // expected...
-    }
-    @finally {
-        // nope..
-    }
-}
-
 -(void) testIncHttpClient {
     
     NSURL* testURL = [NSURL URLWithString:@"http://todo-aerogear.rhcloud.com/todo-server/"];

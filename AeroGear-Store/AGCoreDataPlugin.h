@@ -15,15 +15,13 @@
 @protocol AGIncrementalStoreAdapter <NSObject>
 
 //-(NSURL *) baseURL;
-+(NSString *) modelName;
+//+(NSString *) modelName;
 //+(NSString *) extension;
 @end
 
 @interface AGCoreDataPlugin : AFIncrementalStore<AGIncrementalStoreAdapter>
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 @property (nonatomic) NSString *modelName;
 @property (nonatomic) NSURL *baseURL;
