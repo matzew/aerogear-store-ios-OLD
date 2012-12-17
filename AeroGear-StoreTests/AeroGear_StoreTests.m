@@ -18,7 +18,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-#import "AGIncrementalStore.h"
 #import "AGIncrementalStoreHttpClient.h"
 
 @interface AeroGear_StoreTests : SenTestCase

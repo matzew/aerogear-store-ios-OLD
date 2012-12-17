@@ -8,7 +8,6 @@
 
 #import "AGCoreDataPlugin.h"
 
-#import "AGIncrementalStore.h"
 #import "AGIncrementalStoreHttpClient.h"
 
 @implementation AGCoreDataPlugin {
