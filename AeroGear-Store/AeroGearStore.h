@@ -20,7 +20,7 @@
 #define _AEROGEAR-STORE_
 
 // includes the protocol...
-#import "AGIncrementalStore.h"
+//#import "AGIncrementalStore.h"
 
 #import "AGIncrementalStoreHttpClient.h"
 
